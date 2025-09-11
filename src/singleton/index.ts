@@ -1,7 +1,7 @@
 import { ConexionDB } from "./clases/ConexionDB";
 
 export async function runSingleton(): Promise<void> {
-    console.log("\n=== SINGLETON: ConexionDB de Inventario ===");
+    console.log("SINGLETON: ConexionDB de Inventario");
 
     const db1 = ConexionDB.getInstance({ user: "inventario_user" });
     await db1.connect();
